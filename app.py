@@ -15,7 +15,14 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("Disse: {} (em breve estaremos dando atualizações sobre corona em Mozambique!! Ability Team)".format(msg))
+    resp.message("Disse: {} (digite 'A' para ter atualizações sobre o covid19 em moçambique \n digite 'B' para saber sobre os métodos de prevenção)".format(msg))
+
+    if msg =='A' or  msg =='a':
+         resp.message("existem x casos de covid19 em moçambique")
+         return str(resp)
+    elif msg =='B' or  msg =='b':
+         resp.message("Fique em casa!!!")
+         return str(resp)
 
     return str(resp)
 
