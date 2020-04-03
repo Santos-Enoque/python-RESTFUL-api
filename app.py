@@ -1,6 +1,10 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 
+# IMPORTANT NOTE: 
+# This code was used just for test, hence the use of flask instead of the more rubust flask-restful package
+
+
 app = Flask(__name__)
 
 @app.route("/")
