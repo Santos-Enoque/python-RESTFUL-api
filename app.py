@@ -3,7 +3,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 
 # IMPORTANT NOTE: 
 # This code was used just for test, hence the use of flask instead of the more rubust flask-restful package
-
+# the scripts on the folders RESOURCES and MODELS are not related to this particular bot, but we decided to keep them in the project becaue we believe they would be usefull in the future, when we build more features
 
 app = Flask(__name__)
 
